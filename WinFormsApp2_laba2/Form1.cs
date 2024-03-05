@@ -119,5 +119,18 @@ namespace WinFormsApp2_laba2
                 this.SelectNextControl((Control)sender, true, true, true, true);
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string firstWord = first.Text;
+            string secondWord = second.Text;
+
+            Properties.Settings.Default.first = firstWord;
+            Properties.Settings.Default.second = secondWord;
+            Properties.Settings.Default.Save();
+
+            first.Clear();
+            second.Clear();
+        }
     }
 }

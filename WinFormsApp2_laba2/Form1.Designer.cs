@@ -34,6 +34,7 @@
             first = new TextBox();
             second = new TextBox();
             button2 = new Button();
+            button3 = new Button();
             SuspendLayout();
             // 
             // firstword
@@ -86,18 +87,29 @@
             // 
             button2.Location = new Point(17, 12);
             button2.Name = "button2";
-            button2.Size = new Size(338, 29);
+            button2.Size = new Size(168, 29);
             button2.TabIndex = 3;
             button2.Text = "Задание";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             button2.KeyUp += button2_KeyUp;
             // 
+            // button3
+            // 
+            button3.Location = new Point(198, 12);
+            button3.Name = "button3";
+            button3.Size = new Size(157, 29);
+            button3.TabIndex = 4;
+            button3.Text = "Очистка";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(382, 211);
+            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(second);
             Controls.Add(first);
@@ -119,5 +131,6 @@
         private TextBox first;
         private TextBox second;
         private Button button2;
+        private Button button3;
     }
 }
